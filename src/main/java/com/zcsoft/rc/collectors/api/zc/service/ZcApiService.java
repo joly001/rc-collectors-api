@@ -5,7 +5,7 @@ import com.sharingif.cube.core.handler.bind.annotation.RequestMapping;
 import com.sharingif.cube.core.handler.bind.annotation.RequestMethod;
 import com.zcsoft.rc.collectors.api.zc.entity.ZcReq;
 
-@RequestMapping(value="mnemonic")
+@RequestMapping(value="zc")
 public interface ZcApiService {
 
     /**
