@@ -12,6 +12,11 @@ public class ZcReq {
     @NotEmpty
     private String id;
     /**
+     * 类型
+     */
+    @NotEmpty
+    private String type;
+    /**
      * 经度
      */
     @NotNull
@@ -28,6 +33,14 @@ public class ZcReq {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public Double getLongitude() {
@@ -50,6 +63,7 @@ public class ZcReq {
     public String toString() {
         final StringBuilder sb = new StringBuilder("ZcReq{");
         sb.append("id='").append(id).append('\'');
+        sb.append(", type='").append(type).append('\'');
         sb.append(", longitude=").append(longitude);
         sb.append(", latitude=").append(latitude);
         sb.append('}');

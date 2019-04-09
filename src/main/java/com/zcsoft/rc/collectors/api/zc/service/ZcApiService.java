@@ -9,17 +9,9 @@ import com.zcsoft.rc.collectors.api.zc.entity.ZcReq;
 public interface ZcApiService {
 
     /**
-     * 施工人员数据收集
-     * @param req
+     * 数据收集
      */
-    @RequestMapping(value="collectBuilder", method= RequestMethod.POST)
-    void collectBuilder(ZcReq req);
-
-    /**
-     * 司机数据收集
-     * @param req
-     */
-    @RequestMapping(value="collectDriver", method= RequestMethod.POST)
-    void collectDriver(ZcReq req);
+    @RequestMapping(value="collect", method= RequestMethod.POST)
+    void collect(ZcReq req);
 
 }
